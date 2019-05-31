@@ -1,0 +1,16 @@
+Les infos pour se connecter sur la machine avec le peripherique.
+
+1) comme la machine est partagee par vous tous, la premiere chose est
+de creer un repertoire a vous sur la machine cible
+
+ssh -l osk 134.157.105.213	(le mot de passe est Or2YL3K3qP3L)
+cd 2018_2019
+mkdir joe_et_linda		(si votre binome est compose de joe et linda)
+exit				(pour revenir sur votre machine)
+
+2) la deuxieme chose, maintenant que le repertoire est cree, est de recopier
+votre fichier lcdtemp_etu.c dans le repertoire distant que vous avez cree precedemment
+
+scp lcdtemp_etu.c osk@134.157.105.213:2018_2019/joe_et_linda	(le motde passe est toujours Or2YL3K3qP3L)
+
+3) demander poliment a votre encadrant de tester avec vous votre programme, en mode root.
