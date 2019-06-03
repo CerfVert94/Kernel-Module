@@ -139,7 +139,7 @@ ssize_t lcd_write(struct file *filp, const char __user *user_buf, size_t count,
         tempstring[i] = user_buf[i];
 
 	LCD_STRING(tempstring);
-
+/*
     LCD_CMD(0x40);
     LCD_CMD(0b00100);
     LCD_CMD(0b01010);
@@ -148,7 +148,7 @@ ssize_t lcd_write(struct file *filp, const char __user *user_buf, size_t count,
     LCD_CMD(0b00100);
     LCD_CMD(0b00100);
     LCD_CMD(0b00100);
-    LCD_CMD(0b00100);
+    LCD_CMD(0b00100);*/
 	// if count>16, truncate
 	// copy_from_user(kernel_buf, user_buf, count)
 	// modify kernel_buf to insert \0
